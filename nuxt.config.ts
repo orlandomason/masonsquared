@@ -8,9 +8,14 @@ export default defineNuxtConfig({
     ],
     app: {
         head: {
+            title: 'Masonsquared', // Todo: make a title that moves
+            meta: [
+                { name: 'description', content: 'Building Websites and designing Brands for your Business. Masonsquared is a partnership between two brothers to build websites and brands for companies and start-ups. ' }
+            ],
             htmlAttrs: {
                 lang: "en",
             },
+            link: [{ rel: 'icon', type: 'image/x-icon', href: 'favicon/favicon.ico' }],
         }
     },
     colorMode: {
@@ -19,14 +24,11 @@ export default defineNuxtConfig({
     googleFonts: {
         preconnect: true,
         families: {
-            'Titillium Web': {
-                wght: [200, 300, 400, 600],
-            },
-            Lato: {
-                wght: [400, 600],
-            },
             Roboto: {
                 wght: [300, 400, 500, 600],
+            },
+            'Roboto Condensed': {
+                wght: [300, 400],
             },
             'Roboto Mono': {
                 wght: [300, 400, 500, 600],

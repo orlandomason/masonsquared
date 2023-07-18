@@ -10,6 +10,9 @@
 
 @layer base {
 
+  html {
+    scroll-behavior: smooth;
+  }
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading;
   }
@@ -19,6 +22,15 @@
   label {
     @apply font-text tracking-wide;
   }
+
+  .nav-menu {
+    @apply bg-dkmain text-ltmain dark:bg-ltmain dark:text-dkmain top-20 left-0 right-0 w-screen h-screen pt-10
+    sm:top-24 lg:bg-ltmain lg:text-dkmain lg:dark:bg-dkmain lg:dark:text-ltmain lg:flex lg:gap-12 lg:h-[30px] lg:mr-20 lg:top-auto lg:left-auto lg:right-auto lg:w-auto lg:pt-0;
+  }
+  .nav-menu a {
+    @apply font-mono text-xl lg:text-base;
+  }
+
 
   /**/
   .colorshift-bg {

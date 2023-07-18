@@ -12,13 +12,14 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'text': ['Roboto', 'sans-serif'],
+        'text': ['Roboto Condensed', 'sans-serif'],
         'heading': ['Roboto', 'sans-serif'],
         'mono': ['Roboto Mono', 'sans-serif'],
       },
       boxShadow: {
-        ltoutline: '0 0 10px 0 rgba(255, 255, 255, 0.12)',
+        ltoutline: '0 0 20px 0 rgba(70, 195, 174, 0.12)', //'0 0 10px 0 rgba(255, 255, 255, 0.12)',
         dkoutline: '0 0 10px 0 rgba(0, 0, 0, 0.12)',
+        greenoutline: '0 0 10px 0 rgba(209, 240, 235, 0.12)',
       },
     },
   },

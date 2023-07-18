@@ -1,5 +1,5 @@
 <template>
-  <div ref="target" :class="animate ? `${animation}-to` : `${animation}-from`" :style="{ transition: transition }">
+  <div ref="target" :class="animate ? `${animation}-to` : `${animation}-from`">
     <slot />
   </div>
 </template>
@@ -10,10 +10,6 @@ const props = defineProps({
   animation: {
     type: String,
     default: 'fade',
-  },
-  transition: {
-    type: String,
-    default: 'all 0.6s ease-out',
   },
 })
 
